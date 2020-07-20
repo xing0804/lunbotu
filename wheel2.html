@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图封装</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            list-style: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="windows">
+
+    </div>
+
+    <script src="../7.16/animate.js"></script>
+    <script src="wheel.js"></script>
+    <!-- <script src="wheel copy.js"></script> -->
+
+    <script>
+        
+        wheel(".windows",{
+            imgs:["https://img.alicdn.com/tfs/TB1ftPuNLb2gK0jSZK9XXaEgFXa-1130-500.jpg_q100.jpg","//img.alicdn.com/imgextra/i4/149/O1CN01EW8R7w1CyHcm8YpJo_!!149-0-luban.jpg_q100.jpg","https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg"],
+            imgColor:["#F24117","#3800C0","#E8E8E8"],
+            links:["http://baidu.com","http://sxuek.com","http://www.tmall.com"],
+            imgSize:[1130,500],
+            btnColor:"#fff",
+            btnActive:"red",
+            btnPos:["center","10"]
+        },{
+            time:5000,
+            moveStyle:"linear",
+            movetime:1000
+        })
+
+        // new wheel(".windows",{
+        //     imgs:["https://img.alicdn.com/tfs/TB1ftPuNLb2gK0jSZK9XXaEgFXa-1130-500.jpg_q100.jpg","//img.alicdn.com/imgextra/i4/149/O1CN01EW8R7w1CyHcm8YpJo_!!149-0-luban.jpg_q100.jpg","https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg"],
+        //     imgColor:["#F24117","#3800C0","#E8E8E8"],
+        //     links:["http://baidu.com","http://sxuek.com","http://www.tmall.com"],
+        //     imgSize:[1130,500],
+        //     btnColor:"#fff",
+        //     btnActive:"red",
+        //     btnPos:["center","10"]
+        // },{
+        //     time:5000,
+        //     moveStyle:"linear",
+        //     movetime:1000
+        // })
+
+    </script>
+    
+</body>
+</html>
